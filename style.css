@@ -96,7 +96,7 @@ body {
 .services-brands__container::after {
     content: '';
     position: absolute;
-    top: 110px;
+    top: 90px;
     z-index: 5;
     right: -5px;
     width: 24px;
