@@ -12,18 +12,25 @@ function showElements() {
     });
 }
 
-function swiperMobile () {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+function swiperInit () {
+    new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                enabled: true,
+                slidesPerView: 1.26,
+                spaceBetween: 16,
             },
-            slidesPerView: 1.26,
-            spaceBetween: 16,
-        });
-    }
+            768: {
+                enabled: false,
+                slidesPerView: 'auto',
+            }
+        }
+    });
 }
 
+swiperInit();
 showElements();
-swiperMobile();
