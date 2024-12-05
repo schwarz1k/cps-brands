@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: "TT Lakes", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #f8f8f8;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.services-brands__container {
+    @media (min-width: 768px) {
+        max-width: 100%;
+        padding: 24px;
+    }
+
+    @media (min-width: 1120px) {
+        max-width: 100%;
+        padding: 24px 32px;
+    }
+}
+
+.services-brands {
+    @media (min-width: 768px) {
+        padding: 0;
+        max-width: 768px;
+        margin: 0 auto;
+        min-height: 322px;
+    }
+
+    @media (min-width: 1120px) {
+        max-width: 1120px;
+    }
+}
+
+.services-brands__title {
+    display: block;
+    margin: 0;
+    padding: 16px 24px;
+    background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 100%);
+    font-family: "TT Lakes", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #7e7e82;
+
+    @media (min-width: 1120px) {
+        padding: 16px 32px;
+    }
+}
+
+.services-brands__list {
+    margin: 0;
+    padding: 16px;
+    position: relative;
+
+    @media (min-width: 768px) {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 224px);
+        gap: 16px 24px;
+    }
+
+    @media (min-width: 1120px) {
+        grid-template-columns: repeat(4, 240px);
+        gap: 16px 32px;
+    }
+}
+
+.services-brands__list--hidden {
+
+    @media (min-width: 768px) {
+        max-height: 160px;
+        overflow: hidden;
+    }
+}
+
+.services-brands__container::after {
+    content: '';
+    position: absolute;
+    top: 110px;
+    z-index: 5;
+    right: -5px;
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(270deg, #f8f8f8 0.04%, rgba(248, 248, 248, 0) 100%);
+
+    @media (min-width: 768px) {
+        background: transparent;
+    }
+}
+
+.services-brands__item {
+    padding: 0 16px;
+    margin: 0;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 72px;
+}
+
+.services-brands__item-link {
+    position: relative;
+    display: block;
+    margin: auto 0;
+}
+
+.services-brands__item-link:hover {
+    opacity: 0.7;
+    transition: opacity 0.4s;
+}
+
+.services-brands__item-link::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 180px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff3e79;
+    border-radius: 50%;
+
+    @media (min-width: 768px) {
+        left: 150px;
+    }
+
+    @media (min-width: 1120px) {
+        left: 170px;
+    }
+}
+
+.services-brands__item-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 197px;
+    width: 8px;
+    height: 12px;
+    background: url('img/services/brands/brands-arrow.svg') no-repeat;
+
+    @media (min-width: 768px) {
+        left: 166px;
+    }
+
+    @media (min-width: 1120px) {
+        left: 187px;
+    }
+}
+
+.services-brands__item-img {
+    display: block;
+}
+
+.services-brands__button {
+    font-family: "TT Lakes", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+    margin: 0;
+    padding: 24px 24px 24px 40px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.services-brands__button:hover {
+    opacity: 0.7;
+    transition: opacity 0.4s;
+}
+
+.services-brands__button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url('img/services/services-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services-brands__pagination {
+    position: static;
+}
+
+.services-brands__pagination .swiper-pagination-bullet-active {
+    background-color: #b5b6bc;
+}
