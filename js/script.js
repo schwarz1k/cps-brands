@@ -27,6 +27,7 @@ function swiperInit () {
             768: {
                 enabled: false,
                 slidesPerView: 'auto',
+                spaceBetween: 'auto',
             }
         }
     });
