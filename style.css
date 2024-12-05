@@ -23,6 +23,7 @@ body {
 }
 
 .services-brands__container {
+    padding: 0 24px;
     @media (min-width: 768px) {
         max-width: 100%;
         padding: 24px;
@@ -96,11 +97,11 @@ body {
 .services-brands__container::after {
     content: '';
     position: absolute;
-    top: 90px;
+    top: 85px;
     z-index: 5;
     right: -5px;
     width: 24px;
-    height: 40px;
+    height: 100px;
     background: linear-gradient(270deg, #f8f8f8 0.04%, rgba(248, 248, 248, 0) 100%);
 
     @media (min-width: 768px) {

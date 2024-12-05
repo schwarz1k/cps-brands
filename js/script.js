@@ -14,6 +14,7 @@ function showElements() {
 
 function swiperInit () {
     new Swiper('.swiper-container', {
+        cssMode: 'true',
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -21,7 +22,7 @@ function swiperInit () {
         breakpoints: {
             320: {
                 enabled: true,
-                slidesPerView: 1.26,
+                slidesPerView: 1.15,
                 spaceBetween: 16,
             },
             768: {
