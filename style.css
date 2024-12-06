@@ -86,7 +86,7 @@ body {
     }
 }
 
-.services-brands__list--hidden {
+.services-brands__list--hidden.swiper-wrapper {
 
     @media (min-width: 768px) {
         max-height: 160px;
@@ -103,6 +103,10 @@ body {
     width: 24px;
     height: 100px;
     background: linear-gradient(270deg, #f8f8f8 0.04%, rgba(248, 248, 248, 0) 100%);
+
+    @media (min-width: 376px) {
+        top: 60px;
+    }
 
     @media (min-width: 768px) {
         background: transparent;
@@ -198,6 +202,11 @@ body {
 
 .services-brands__pagination {
     position: static;
+}
+
+.swiper-pagination-bullet {
+    background-color: #625f5f;
+    -webkit-tap-highlight-color:  transparent;
 }
 
 .services-brands__pagination .swiper-pagination-bullet-active {

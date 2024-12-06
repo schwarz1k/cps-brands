@@ -20,30 +20,11 @@ function swiperInit () {
             clickable: true,
         },
         breakpoints: {
-            255: {
-                enabled: true,
-                slidesPerView: 1,
-                spaceBetween: 16,
-            },
             320: {
                 enabled: true,
                 slidesPerView: 1.15,
                 spaceBetween: 16,
-            },
-            400: {
-                enabled: true,
-                slidesPerView: 1.5,
-                spaceBetween: 16,
-            },
-            500: {
-                enabled: true,
-                slidesPerView: 1.8,
-                spaceBetween: 16,
-            },
-            600: {
-                enabled: true,
-                slidesPerView: 2,
-                spaceBetween: 16,
+                width: 326,
             },
             768: {
                 enabled: false,
