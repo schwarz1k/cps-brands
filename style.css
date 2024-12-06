@@ -200,6 +200,10 @@ body {
     background-position: center;
 }
 
+.services-brands__button--more::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
 .services-brands__pagination {
     position: static;
 }

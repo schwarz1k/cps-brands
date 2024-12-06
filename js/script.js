@@ -4,6 +4,7 @@ let hiddenElement = document.querySelector(".services-brands__list");
 function showElements() {
     hiddenButton.addEventListener("click", () => {
         hiddenElement.classList.toggle("services-brands__list--hidden");
+        hiddenButton.classList.toggle("services-brands__button--more");
         if (hiddenElement.classList.contains("services-brands__list--hidden")) {
             hiddenButton.textContent = 'Показать все';
         } else {
